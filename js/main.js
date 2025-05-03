@@ -86,30 +86,49 @@ const timer = setInterval(() => {
 }, 1000);
 
 // Форма RSVP
-document.getElementById('rsvp-form').addEventListener('submit', function (e) {
-  e.preventDefault();
+document
+  .getElementById('rsvp-form')
+  .addEventListener('submit', async function (e) {
+    e.preventDefault();
 
-  const form = e.target;
+    const form = e.target;
 
-  const fullname = form.fullname.value.trim();
-  const attendance = form.attendance.value;
-  const partner = form.partner.value.trim();
+    const fullname = form.elements['fullname'].value;
+    const attendance = form.elements['attendance'].value;
+    const partner = form.elements['partner'].value;
 
-  const alcoholInputs = form.querySelectorAll('input[name="alcohol"]:checked');
-  const alcohol = Array.from(alcoholInputs).map(input => input.value);
+    const alcoholChoices = [];
+    form.querySelectorAll('input[name="alcohol"]:checked').forEach(input => {
+      alcoholChoices.push(input.nextSibling.textContent.trim());
+    });
 
-  const formData = {
-    fullname,
-    attendance,
-    partner,
-    alcohol,
-    submittedAt: new Date().toISOString(),
-  };
+    const rsvpData = {
+      name: fullname,
+      presence: attendance === 'yes' ? 'Так' : 'Ні',
+      partner: partner,
+      alcohol: alcoholChoices,
+    };
 
-  const savedRSVPs = JSON.parse(localStorage.getItem('rsvpList')) || [];
-  savedRSVPs.push(formData);
-  localStorage.setItem('rsvpList', JSON.stringify(savedRSVPs));
+    try {
+      const response = await fetch(
+        'https://script.google.com/macros/s/AKfycby1LIN7El1b_DKgo3Vlugx_hC-Qj2AhB-LNoH7jb0IIvxyYNI-8bLfVF6xcPzAEovbyHQ/execL',
+        {
+          method: 'POST',
+          body: JSON.stringify(rsvpData),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
 
-  form.reset();
-  alert('Дякуємо! Ваші дані збережено.');
-});
+      if (response.ok) {
+        alert('Дякуємо за відповідь 💌');
+        form.reset();
+      } else {
+        alert('Помилка надсилання. Спробуйте пізніше.');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Не вдалося підключитися до сервера.');
+    }
+  });
