@@ -2,566 +2,239 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Wedding Invite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
-  <body class="page">
-    <header class="page-header">
-      <div class="container header-container">
-        <nav class="header-nav">
-          <a class="logo link" href="./index.html"
-            >WEB<span class="studio">Studio</span></a
-          >
-          <ul class="list site-nav">
-            <li>
-              <a class="link link-nav link-nav-active" href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li>
-              <a class="link link-nav" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li><a class="link link-nav" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="list auth-nav">
-            <li>
-              <a class="link link-auth" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="link link-auth" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>
-
+  <body>
     <main>
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button" data-modal-open>
-            Order Service
-          </button>
-        </div>
-      </section>
-
-      <section class="features section">
-        <div class="container">
-          <h2 class="features-title visually-hidden">Features</h2>
-          <ul class="list features-list">
-            <li class="features-item">
-              <div class="features-icon">
-                <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="title">Strategy</h3>
-              <p class="features-description">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li class="features-item">
-              <div class="features-icon">
-                <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="title">Punctuality</h3>
-              <p class="features-description">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li class="features-item">
-              <div class="features-icon">
-                <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="title">Diligence</h3>
-              <p class="features-description">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li class="features-item">
-              <div class="features-icon">
-                <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="title">Technologies</h3>
-              <p class="features-description">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="products section">
-        <div class="container">
-          <h2 class="products-title">What are we doing</h2>
-          <ul class="list products-list">
-            <li class="products-item">
-              <img
-                src="./images/img1.jpg"
-                alt="Photo digital"
-                width="360"
-                height="300"
-              />
-            </li>
-            <li class="products-item">
-              <img
-                src="./images/img2.jpg"
-                alt="Photo digital"
-                width="360"
-                height="300"
-              />
-            </li>
-            <li class="products-item">
-              <img
-                src="./images/img3.jpg"
-                alt="Photo digital"
-                width="360"
-                height="300"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="team section">
-        <div class="container">
-          <h2 class="team-title">Our Team</h2>
-          <ul class="list team-list">
-            <li class="team-item">
-              <img
-                src="./images/mark-guerrero.jpg"
-                alt="Photo team"
-                width="264"
-                height="260"
-              />
-              <div class="team-container">
-                <h3 class="team-name">Mark Guerrero</h3>
-                <p class="team-position">Product Designer</p>
-                <ul class="list social-list">
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons/iconmoon/sprite.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons/iconmoon/sprite.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons/iconmoon/sprite.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-item">
-              <img
-                src="./images/tom-ford.jpg"
-                alt="Photo team"
-                width="264"
-                height="260"
-              />
-              <div class="team-container">
-                <h3 class="team-name">Tom Ford</h3>
-                <p class="team-position">Frontend Developer</p>
-                <ul class="list social-list">
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-item">
-              <img
-                src="./images/camila-garcia.jpg"
-                alt="Photo team"
-                width="264"
-                height="260"
-              />
-              <div class="team-container">
-                <h3 class="team-name">Camila Garcia</h3>
-                <p class="team-position">Marketing</p>
-                <ul class="list social-list">
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons/iconmoon/sprite.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons/iconmoon/sprite.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons/iconmoon/sprite.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons/iconmoon/sprite.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-item">
-              <img
-                src="./images/daniel-wilson.jpg"
-                alt="Photo team"
-                width="264"
-                height="260"
-              />
-              <div class="team-container">
-                <h3 class="team-name">Daniel Wilson</h3>
-                <p class="team-position">UI Designer</p>
-                <ul class="list social-list">
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons/iconmoon/sprite.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons/iconmoon/sprite.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons/iconmoon/sprite.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item">
-                    <a class="social-link" href="">
-                      <svg class="social-icon" width="16" height="16">
-                        <use
-                          href="./images/icons/iconmoon/sprite.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="customers section">
-        <div class="container">
-          <h2 class="customers-title">Customers</h2>
-          <ul class="list customers-list">
-            <li class="customers-item">
-              <a class="customers-link" href=""
-                ><svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-logo-company"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customers-item">
-              <a class="customers-link" href=""
-                ><svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-logo-company-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customers-item">
-              <a class="customers-link" href=""
-                ><svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-logo-company-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customers-item">
-              <a class="customers-link" href=""
-                ><svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-logo-company-3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customers-item">
-              <a class="customers-link" href=""
-                ><svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-logo-company-4"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customers-item">
-              <a class="customers-link" href=""
-                ><svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-logo-company-5"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-logo">
-          <a class="logo link" href="./index.html"
-            >WEB<span class="studio">Studio</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
+      <section class="invite-section" id="inviteSection">
+      <div class="container">
+        <h1 class="invitation-title">ЗАПРОШЕННЯ НА ВЕСІЛЛЯ</h1>
+        <p class="invitation-text">A & Y</p>
+        <img
+          class="inv-image"
+          src="./img/inv-photo.jpg"
+          alt="Наше фото"
+          width="200"
+          height="200"
+        />
+        <p class="invitation-second-text">
+          Натисніть на фото, щоб відкрити запрошення
+        </p>
+        <audio
+          id="weddingMusic"
+          src="./audio/IsakDanielsonPower.mp3"
+        ></audio>
+      </div>
+    </section>
+    <section class="location-section section">
+      <div class="container location-container">
+        <div class="pre-text">
+          <p>
+            Ми будемо щасливі розділити з вами радість події <br />
+            <span class="data">01 червня 2025</span> <br />З нагоди нашого
+            весілля
           </p>
         </div>
-        <div class="footer-social">
-          <p class="footer-social-paragraph">Social media</p>
-          <ul class="list social-list">
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="24" height="24">
-                  <use
-                    href="./images/icons/iconmoon/sprite.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="24" height="24">
-                  <use
-                    href="./images/icons/iconmoon/sprite.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="24" height="24">
-                  <use
-                    href="./images/icons/iconmoon/sprite.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="24" height="24">
-                  <use
-                    href="./images/icons/iconmoon/sprite.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
+
+        <div class="location-wrapper">
+          <h2 class="location-title">Location</h2>
+          <p class="location-text">
+            Чекаємо Вас за адресою: <br />
+            м. Біла Церква, ресторан "Сад Мур"
+          </p>
+          <a
+            class="location-button"
+            href="https://www.google.com/maps/place/%D0%A1%D0%B0%D0%B4%2FGarden.bc/@49.8146607,30.0574073,17z/data=!3m1!4b1!4m6!3m5!1s0x40d3430c9a833707:0x5c0c7574e9350370!8m2!3d49.8146607!4d30.0574073!16s%2Fg%2F11vybk1cc7?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoJLDEwMjExNjQwSAFQAw%3D%3D"
+            rel="noreferer noopener"
+            target="_blank"
+            >Переглянути на мапі</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="timing-section section">
+      <div class="container timing-wrapper">
+        <h2 class="timing-title">
+          Wedding <br />
+          program
+        </h2>
+        <ul class="timing-text-wrapper">
+          <li class="line">
+            <h3>13:30</h3>
+            <p>Збір гостей в ресторані</p>
+          </li>
+          <li class="line">
+            <h3>14:00</h3>
+            <p>Початок церемонії</p>
+          </li>
+           <li class="line">
+            <h3>14:30</h3>
+            <p>Привітання молодят та фото з гостями</p>
+          </li>
+           <li class="line">
+            <h3>15:00</h3>
+            <p>Банкет</p>
+          </li>
+          <li class="line">
+            <h3>22:00</h3>
+            <p>Фінал</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+        
+    <section class="dresscode-section section">
+      <div class="container dresscode-container">
+        <img
+          class="dresscode-img"
+          src="./img/dresscode-photo.jpg"
+          alt="Наше фото 2"
+        />
+        <div class="dresscode-wrapper">
+          <h2 class="dresscode-title">Dress<br />code</h2>
+          <p class="dresscode-text">
+            Нам буде особливо приємно, якщо ви підтримаєте <br />
+            кольори нашого весілля <br />
+            у своїх образах
+          </p>
+          <ul class="dresscode-list">
+            <li class="dresscode-item green"></li>
+            <li class="dresscode-item haki"></li>
+            <li class="dresscode-item white"></li>
+            <li class="dresscode-item beige"></li>
+            <li class="dresscode-item gray"></li>
+            <li class="dresscode-item black"></li>
           </ul>
         </div>
-        <div class="footer-form">
-          <p class="footer-subscribe-text">Subscribe</p>
-          <form class="footer-subscribe-form">
-            <label class="footer-field" for="email">
-              <input
-                class="footer-input"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="E-mail"
-            /></label>
-
-            <button class="footer-subscribe-button" type="submit">
-              Subscribe
-              <svg class="footer-subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-paper-plane"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
       </div>
-    </footer>
-    <div class="modal is-hidden" data-modal>
-      <div class="backdrop">
-        <button class="close-button" type="button" data-modal-close>
-          <svg class="close-button-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
-          </svg>
-        </button>
-        <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form>
-          <div class="modal-field-wrapper">
-            <label class="modal-field" for="user-name">Name</label>
-            <div class="modal-icon-wrapper">
-              <input
-                class="modal-input"
-                type="text"
-                id="user-name"
-                name="user-name"
-                required
-              />
-              <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-person-black"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="modal-field-wrapper">
-            <label class="modal-field" for="user-tel">Phone</label>
-            <div class="modal-icon-wrapper">
-              <input
-                class="modal-input"
-                type="tel"
-                id="user-tel"
-                name="user-tel"
-                required
-              />
-              <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone-black"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="modal-field-wrapper">
-            <label class="modal-field" for="user-email">Email</label>
-            <div class="modal-icon-wrapper">
-              <input
-                class="modal-input"
-                type="email"
-                id="user-email"
-                name="user-email"
-                required
-              />
-              <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-email-black"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="modal-field-area">
-            <label class="modal-field" for="user-comment">Comment</label>
-            <textarea
-              class="modal-comment"
-              name="user-comment"
-              id="user-comment"
-              placeholder="Text input"
-            ></textarea>
-          </div>
-          <div class="privacy-wrapper">
-            <input
-              class="input-check visually-hidden"
-              type="checkbox"
-              id="user-privacy"
-              name="user-privacy"
-              value="true"
-            />
-            <label class="checkbox-label" for="user-privacy">
-              <span class="checkbox-wrap">
-                <svg class="checkbox-made-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-vector"></use>
-                </svg> </span
-              >I accept the terms and conditions of the&nbsp;<a
-                class="privacy-link"
-                href=""
-                >Privacy Policy</a
-              ></label
-            >
-          </div>
+    </section>
 
-          <button class="modal-button" type="submit">Button</button>
+    <section class="rsvp-section section">
+      <div class="container rsvp-container">
+        <h2 class="rsvp-title">RSVP</h2>
+        <p class="rsvp-text">Просимо підтвердити вашу присутність</p>
+        <p class="rsvp-text">
+          Щоб зробити нашу подію комфортною для вас і для нас, дайте відповідь,
+          будь ласка, на кілька питань
+        </p>
+        <form class="rsvp-wrapper" id="rsvp-form">
+          <label for="">Ваше ім'я та прізвище</label>
+          <input
+            class="underline-input"
+            type="text"
+            placeholder="Ваше ім'я"
+            name="fullname"
+            required
+          />
+          <fieldset class="rsvp-check-wrapper">
+            <legend>Чи зможете Ви бути присутнім?</legend>
+
+            <label
+              ><input type="radio" name="attendance" value="yes" /> Так, я
+              буду</label
+            ><br />
+            <label
+              ><input type="radio" name="attendance" value="no" /> На жаль, не
+              зможу</label
+            >
+          </fieldset>
+          <label for="">З ким Ви плануєте бути?</label>
+          <input
+            class="underline-input"
+            type="text"
+            placeholder="Ім'я"
+            name="partner"
+            required
+          />
+          <fieldset class="rsvp-check-wrapper">
+            <legend>Якому алкоголю надаєте перевагу?</legend>
+
+            <label
+              ><input type="checkbox" name="alcohol" value="red" /> Вино
+              червоне</label
+            ><br />
+            <label
+              ><input type="checkbox" name="alcohol" value="white" /> Вино
+              біле</label
+            ><br />
+            <label
+              ><input type="checkbox" name="alcohol" value="non-alcohol" /> Вино
+              безалгогольне</label
+            ><br />
+            <label
+              ><input type="checkbox" name="alcohol" value="whiskey" />
+              Віскі</label
+            ><br />
+            <label
+              ><input type="checkbox" name="alcohol" value="rum" /> Ром</label
+            ><br />
+            <label
+              ><input type="checkbox" name="alcohol" value="vodka" />
+              Горілка</label
+            >
+          </fieldset>
+
+          <button class="rsvp-button" type="submit">Надіслати</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </section>
+    <section class="flowers-section section">
+      <div class="container">
+        <h2 class="flowers-title">Flowers</h2>
+        <p class="flowers-text">
+          Ми просимо вас не дарувати нам квіти, адже одразу після весілля ми
+          їдемо у довгоочікувану подорож і не встигнемо насолодитися цією
+          красою! <br />
+          Висловити вашу любов та радість можна у вигляді пляшки вина або
+          шампанського, яке, ми обіцяємо, не зав'яне.
+        </p>
+      </div>
+    </section>
+    <section class="telegram-section section">
+      <div class="container telegram-wrapper">
+        <h2 class="telegram-title">Photo & Video</h2>
+        <p class="telegram-text">
+          Також ми створили телеграм-чат нашого свята, де можна буде поділитися
+          фото та відео в день та після весілля
+        </p>
+        <a class="telegram-button" href="https://t.me/+N2j_rWid3CQ0OGJi" rel="noreferer noopener"
+            target="_blank" type="button"
+          >приєднатись до чату</a
+        >
+      </div>
+    </section>
+    <section class="timer-section section">
+      <div class="container">
+        <h2 class="timer-title">До події залишилось:</h2>
+        <div class="countdown">
+      <div class="time-item">
+        <span id="days" class="time-num">00</span>
+        <span class="time-label">днів</span>
+      </div>
+      <div class="time-item">
+        <span id="hours" class="time-num">00</span>
+        <span class="time-label">годин</span>
+      </div>
+      <div class="time-item">
+        <span id="minutes" class="time-num">00</span>
+        <span class="time-label">хвилин</span>
+      </div>
+      <div class="time-item">
+        <span id="seconds" class="time-num">00</span>
+        <span class="time-label">секунд</span>
+      </div>
+      </div>
+    </section>
+    </main>
+    <footer class="goodbye-section section">
+      <div class="container"><h2 class="goodbye-text">ДО ЗУСТРІЧІ</h2></div>
+    </footer>
+    <script type="module" src="./js/main.js" defer></script>
   </body>
 </html>

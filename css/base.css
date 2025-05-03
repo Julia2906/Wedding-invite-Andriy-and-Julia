@@ -1,0 +1,38 @@
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --font-size: 14px;
+  --line-height: 24px;
+  --font-weight: 400;
+
+  --color-text: #1c1d20;
+  --background: white;
+
+  --border-prj: rgba(28, 29, 32, 0.2);
+  --text-grey-all: rgba(250, 250, 250, 0.6);
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  color: var(--color-text);
+  background-color: var(--background);
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 56px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 700;
+}
