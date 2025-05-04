@@ -86,49 +86,23 @@ const timer = setInterval(() => {
 }, 1000);
 
 // Форма RSVP
-document
-  .getElementById('rsvp-form')
-  .addEventListener('submit', async function (e) {
-    e.preventDefault();
+document.getElementById('rsvp-form').addEventListener('submit', function (e) {
+  e.preventDefault(); // зупиняємо стандартну дію
 
-    const form = e.target;
+  const form = e.target;
+  const data = new FormData(form);
 
-    const fullname = form.elements['fullname'].value;
-    const attendance = form.elements['attendance'].value;
-    const partner = form.elements['partner'].value;
-
-    const alcoholChoices = [];
-    form.querySelectorAll('input[name="alcohol"]:checked').forEach(input => {
-      alcoholChoices.push(input.nextSibling.textContent.trim());
+  fetch(form.action, {
+    method: form.method,
+    body: data,
+  })
+    .then(response => response.text())
+    .then(result => {
+      alert('Дякуємо! 💌 Ваша відповідь надіслана.');
+      form.reset();
+    })
+    .catch(error => {
+      console.error('Помилка:', error);
+      alert('На жаль, не вдалося надіслати. Спробуйте пізніше.');
     });
-
-    const rsvpData = {
-      name: fullname,
-      presence: attendance === 'yes' ? 'Так' : 'Ні',
-      partner: partner,
-      alcohol: alcoholChoices,
-    };
-
-    try {
-      const response = await fetch(
-        'https://script.google.com/macros/s/AKfycby1LIN7El1b_DKgo3Vlugx_hC-Qj2AhB-LNoH7jb0IIvxyYNI-8bLfVF6xcPzAEovbyHQ/execL',
-        {
-          method: 'POST',
-          body: JSON.stringify(rsvpData),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        }
-      );
-
-      if (response.ok) {
-        alert('Дякуємо за відповідь 💌');
-        form.reset();
-      } else {
-        alert('Помилка надсилання. Спробуйте пізніше.');
-      }
-    } catch (err) {
-      console.error(err);
-      alert('Не вдалося підключитися до сервера.');
-    }
-  });
+});
